@@ -6,7 +6,7 @@ import { ValidationPipe } from '@nestjs/common';
 async function bootstrap() {
   const port = 5000;
   const app = await NestFactory.create(AppModule);
-  app.useGlobalPipes(
+  app.useGlobalPipes( 
     new ValidationPipe({
       whitelist: true,
       transform: true,
