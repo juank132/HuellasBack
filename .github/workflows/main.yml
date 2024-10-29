@@ -27,7 +27,7 @@ jobs:
           context: ./back
           file: ./back/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}castillojuancarlos/huellas:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/huellas:latest
 
       - name: Trigger Deploy on Railway
         run: |
