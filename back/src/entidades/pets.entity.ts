@@ -47,9 +47,9 @@ export class PetsEntity {
     age: number
 
     @Column({
-        nullable: false
+        nullable: true
     })
-    month: string
+    month?: string
 
 
     @Column({
@@ -89,10 +89,10 @@ export class PetsEntity {
     godfather?: string | undefined
 
     @Column({
-        nullable: true,
         default: false,
+        nullable: true,
     })
-    isCondition: boolean;
+    isCondition?: boolean;
 
     @Column({
         nullable: true,
